@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color:lightblue;
+            margin: 0;
+            font-family: 'Trebuchet MS';
+        }
+
+        .welcome {
+            background-color: white;
+            
+            color:blue;
+        }
+
+        .welcome {
+            font-size:15px;
+        }
+
+        .head {
+            background-image: linear-gradient(orange, blue);
+            padding-bottom: 30px;
+            border-radius:0px 0px 20px 20px;
+            position: -webkit-sticky; /* Safari & IE */
+            position: sticky;
+            top: 0;
+        }
+
+        .head h3 {
+            background-color: white;
+            padding: 7px;
+            border-radius: 50px;
+            width: 150px;
+            color:darkblue;
+            font-size: 20px;
+        }
+
+        center img {
+            margin-top: 15px;
+            margin-bottom: 12px;
+            background-color: white;
+            padding: 2px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color:white;
+            background-color: transparent;
+            border: 1px groove white;
+            padding: 7px;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+    </style>
+    <style>
+        /* Center the loader */
+        #loader {
+          position: absolute;
+          left: 69%;
+          top: 50%;
+          z-index: 1;
+          width: 30px;
+          height: 30px;
+          margin: -76px 0 0 -76px;
+          border: 10px solid orange;
+          border-radius: 50%;
+          border-top: 10px solid blue;
+          border-bottom: 10px solid blue;
+          -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+        }
+
+        @media only screen and (min-width: 400px) {
+                #loader {
+                    left: 54%;
+                    top: 50%;
+                }
+            }
+        
+        @-webkit-keyframes spin {
+          0% { -webkit-transform: rotate(0deg); }
+          100% { -webkit-transform: rotate(360deg); }
+        }
+        
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+        
+        /* Add animation to "page content" */
+        .animate-bottom {
+          position: relative;
+          -webkit-animation-name: animatebottom;
+          -webkit-animation-duration: 1s;
+          animation-name: animatebottom;
+          animation-duration: 1s
+        }
+        
+        @-webkit-keyframes animatebottom {
+          from { bottom:-100px; opacity:0 } 
+          to { bottom:0px; opacity:1 }
+        }
+        
+        @keyframes animatebottom { 
+          from{ bottom:-100px; opacity:0 } 
+          to{ bottom:0; opacity:1 }
+        }
+        
+        #myDiv {
+          display: none;
+          text-align: center;
+        }
+        </style>
+    <title>About us</title>
+</head>
+<body onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
+    <div style="display: none;" id="myDiv" class="animate-bottom">
+        <div class="welcome">
+            <center>
+                About Asmasad
+            </center>
+        </div>
+        <div class="head">
+            <center>
+                <img src="asmasad.png" alt="" height="110px" width="110px" style="border-radius:100px;">
+                <h3 style="margin-top: 5px;">
+                    About us
+                </h3>
+                <p style="margin-top: -16px; color:white; font-size:14px">
+                    Read to Know Something About The Company 
+                </p><br>
+    
+                <div class="nav" style="display: flex; justify-content:space-around">
+                    <div class="home">
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </div>
+                    <div class="about">
+                        <a href="#" style="background-color: white; color:blue;">
+                            About
+                        </a>
+                    </div>
+                    <div class="services">
+                        <a href="services.html">
+                            Services
+                        </a>
+                    </div>
+                    <div class="contact">
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+            </center>
+        </div>
+    
+        <center>
+        <h4>
+            About Asmasad
+        </h4>
+        <div class="abt">
+            <h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In esse iure neque ratione expedita vel pariatur nihil voluptatibus quasi dolor hic aspernatur, nisi ut quisquam autem inventore sunt saepe explicabo?
+            </h4>
+        </div>
+    </div>
+
+    
+<script>
+    var myVar;
+    
+    function myFunction() {
+      myVar = setTimeout(showPage, 1000);
+    }
+    
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+    </script>
+
+</body>
+</html>

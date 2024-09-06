@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color:lightcyan;
+            margin: 0;
+            font-family: 'Trebuchet MS';
+        }
+
+        .welcome {
+            background-color: white;
+
+            color:blue;
+        }
+
+        .welcome {
+            font-size:15px;
+        }
+
+        .head {
+            background-image: linear-gradient(orange, blue);
+            padding-bottom: 30px;
+            border-radius:0px 0px 20px 20px;
+            position: -webkit-sticky; /* Safari & IE */
+            position: sticky;
+            top: 0;
+        }
+
+        .head h3 {
+            background-color: white;
+            padding: 7px;
+            border-radius: 50px;
+            width: 300px;
+            color:darkblue;
+            font-size: 20px;
+        }
+
+        center img {
+            margin-top: 15px;
+            margin-bottom: 12px;
+            background-color: white;
+            padding: 2px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color:white;
+            background-color: transparent;
+            border: 1px groove white;
+            padding: 7px;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+    </style>
+    <style>
+        /* Center the loader */
+        #loader {
+          position: absolute;
+          left: 69%;
+          top: 50%;
+          z-index: 1;
+          width: 30px;
+          height: 30px;
+          margin: -76px 0 0 -76px;
+          border: 10px solid orange;
+          border-radius: 50%;
+          border-top: 10px solid blue;
+          border-bottom: 10px solid blue;
+          -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+        }
+
+        @media only screen and (min-width: 400px) {
+                #loader {
+                    left: 54%;
+                    top: 50%;
+                }
+            }
+        
+        @-webkit-keyframes spin {
+          0% { -webkit-transform: rotate(0deg); }
+          100% { -webkit-transform: rotate(360deg); }
+        }
+        
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+        
+        /* Add animation to "page content" */
+        .animate-bottom {
+          position: relative;
+          -webkit-animation-name: animatebottom;
+          -webkit-animation-duration: 1s;
+          animation-name: animatebottom;
+          animation-duration: 1s
+        }
+        
+        @-webkit-keyframes animatebottom {
+          from { bottom:-100px; opacity:0 } 
+          to { bottom:0px; opacity:1 }
+        }
+        
+        @keyframes animatebottom { 
+          from{ bottom:-100px; opacity:0 } 
+          to{ bottom:0; opacity:1 }
+        }
+        
+        #myDiv {
+          display: none;
+          text-align: center;
+        }
+        </style>
+    <title>Asmasad</title>
+</head>
+<body onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
+    <div style="display: none;" id="myDiv" class="animate-bottom">
+        <div class="welcome">
+            <center>
+                Welcome to
+            </center>
+        </div>
+        <div class="head">
+            <center>
+                    <img src="asmasad.png" alt="" height="110px" width="110px" style="border-radius:100px;">
+                    <h3 style="margin-top: 5px; font-size: 21px; font-weight: bold; width: 290px; padding-top: 7px; padding-bottom: 7px;">
+                        Asmasad Technical Univaerse
+                    </h3>
+                <p style="margin-top: -16px; color:white; font-size:14px">
+                    For Faster and Secured Services
+                </p><br>
+    
+                <div class="nav" style="display: flex; justify-content:space-around">
+                    <div class="home">
+                        <a href="#" style="background-color: white; color:blue;">
+                            Home
+                        </a>
+                    </div>
+                    <div class="about">
+                        <a href="about.html">
+                            About
+                        </a>
+                    </div>
+                    <div class="services">
+                        <a href="services.html">
+                            Services
+                        </a>
+                    </div>
+                    <div class="contact">
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+            </center>
+        </div>
+    
+        <center>
+        <h4>
+            Shotcuts to our Services
+        </h4>
+        
+        <div class="content" style="display: flex; justify-content:space-around; margin-top:-15px">
+            <div class="1">
+                <img src="com.jpg" alt="" height="70px" width="90px" style="border-radius:20px;
+                border: 2px solid blue;">
+                <p style="margin-top: -10px;">
+                    Computings
+                </p>
+            </div>
+            <div class="2">
+                <img src="art.png" alt="" height="70px" width="90px" style="border-radius:20px;
+                border: 2px solid blue;">
+                <p style="margin-top: -10px;">
+                    Are & Design
+                </p>
+            </div>
+            
+        </div>
+    
+        <div class="content" style="display: flex; justify-content:space-around; margin-top:-10px">
+            <div class="1">
+                <img src="com.jpg" alt="" height="70px" width="90px" style="border-radius:20px;
+                border: 2px solid blue;">
+                <p style="margin-top: -10px;">
+                    Electronics
+                </p>
+            </div>
+            <div class="2">
+                <img src="art.png" alt="" height="70px" width="90px" style="border-radius:20px;
+                border: 2px solid blue;">
+                <p style="margin-top: -10px; ">
+                    Are & Design
+                </p>
+            </div>
+        </div>
+    
+        <a href="services.html" style="text-decoration:none;
+         ">
+            <p style="color:white; background-color: blue;
+            padding: 7px; border-radius: 10px; width: 200px;">
+                View More
+            </p>
+        </a>
+    </div>
+
+        
+<script>
+    var myVar;
+    
+    function myFunction() {
+      myVar = setTimeout(showPage, 1000);
+    }
+    
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+      
+    }
+    </script>
+   
+</body>
+</html>
